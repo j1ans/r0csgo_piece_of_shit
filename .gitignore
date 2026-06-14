@@ -1,0 +1,4 @@
+# Publish ONLY the report. Exclude all binaries, dumps, logs, archives.
+/*
+!.gitignore
+!README.md
